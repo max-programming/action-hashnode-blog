@@ -51,7 +51,7 @@ module.exports = async function( username, limit = 6, BLOG_URL = false ) {
 				if( posts.length >= limit ) {
 					loop_status = false;
 				} else {
-					post.url = helpers.post_link( post, username, BLOG_URL );
+					post.url = helpers.post_link( post, username, BLOG_URL ) + '?ref=github;
 					posts.push( post );
 				}
 			} );
