@@ -1,5 +1,5 @@
 function atag( link, title, content ) {
-	return ( link !== '' ) ? `<a href="${link}" title="${title}">${content}</a>` : content;
+	return ( link !== '' ) ? `<a href="${link}?ref=github" title="${title}">${content}</a>` : content;
 }
 
 function imgtag( src, link, title, align, width ) {
